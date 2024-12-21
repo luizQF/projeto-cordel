@@ -1,0 +1,85 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+:root{
+    --fontetitulo: "Passion One", serif;
+    --fonteverso: "Sriracha", serif;
+    --titulobackground: black;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    color:white;
+    background-color: var(--titulobackground);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    text-align: center;
+    width: 100%;
+}
+    header > h1{
+        font: bold 8vw var(--fontetitulo);
+
+    }
+    header > p{
+        font:normal 1.05em var(--fontetitulo)
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        color: grey;
+    }
+main p{
+    font: normal 3vw var(--fonteverso);
+    padding: 45px;
+}
+#a2{
+    background: white url(imagens/background001.jpg) left center no-repeat fixed;
+    background-size: cover;
+    height: 120vh;
+    color:white;
+    position: relative;
+    box-shadow:inset 0px 5px 8px rgba(0, 0, 0, 0.423) ;
+}
+#a2 p{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.688);
+    width: 35%;
+    top: 8%;
+    transition: transform 0.4s ease-in-out;
+}
+#a2 p:hover{
+    transform: scale(1.1) translate(10%);
+}
+#a4{
+    background: white url(imagens/background002.jpg) center left no-repeat fixed;
+    background-size: cover;
+    height: 120vh;
+    color:white;
+    position: relative;
+    box-shadow:inset 0px 5px 8px rgba(0, 0, 0, 0.423) ;
+
+}
+
+#a4 p{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.688);
+    width: 35%;
+    top: 10%;
+    transition: transform 0.4s ease-in-out;
+}
+#a4 p:hover{
+    transform: scale(1.1) translate(10%);
+}
+footer{
+    background-color: black;
+    color: rgba(255, 255, 255, 0.592);
+    text-align: center;
+    font: normal 1em Arial, Helvetica, sans-serif;
+    padding: 8px;
+}
+
+
